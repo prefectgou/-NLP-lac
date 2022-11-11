@@ -15,6 +15,11 @@ LAC全称Lexical Analysis of Chinese，是百度自然语言处理部研发的�
 ### 安装说明
 代码兼容Python2/3
 - 全自动安装: `pip install lac`
+1. 由于baidu/lac 2.1依赖paddlepaddle最高1.8.5（使用2.1会报错lac 2.1.2 depends on paddlepaddle>=1.6）
+python3 -m pip install paddlepaddle==1.8.5 -i https://mirror.baidu.com/pypi/simple
+2. 安装完paddlepaddle模块后再次安装LAC模块即可：
+pip3 install LAC
+
 - 半自动下载：先下载[http://pypi.python.org/pypi/lac/](http://pypi.python.org/pypi/lac/)，解压后运行 `python setup.py install`
 - 安装完成后可在命令行输入`lac`或`lac --segonly`,`lac --rank`启动服务，进行快速体验。
 
